@@ -5,6 +5,7 @@ from rest_framework.decorators import api_view
 from api.models import Api
 from api.serializers import ApiSerializers
 from rest_framework.response import Response
+from rest_framework import status
 
 
 
@@ -38,7 +39,8 @@ def apidetail(self,request,pk):
 @api_view(['GET', 'POST'])
 def api_list(request):
     """
-    List all code snippets, or create a new snippet.
+    List all free sites that render free courses online.
+    e.g Udemy, Edx, Coursera, Pluralsight, Udacity etc.
     """
     if request.method == 'GET':
         api = Api.objects.all()
