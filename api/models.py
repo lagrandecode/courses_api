@@ -2,6 +2,7 @@ from datetime import datetime
 from email.policy import default
 from django.db import models
 
+
 # Create your models here.
 
 # '''creating class '''
